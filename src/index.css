@@ -77,7 +77,7 @@ button:focus-visible {
 @font-face {
   font-family: "Mulish Regular";
   src: local("Mulish Regular"),
-    url(./static/fonts/Mulish/Mulish-Regular.ttf) format("truetype");
+    url(./assets/fonts/Mulish/Mulish-Regular.ttf) format("truetype");
 }
 
 @font-face {
