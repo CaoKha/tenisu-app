@@ -4,9 +4,7 @@ import { useEffect, useState } from "react"
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import { useNavigate } from "react-router-dom";
 export const DetailPage = () => {
-  const {
-    player,
-  } = useStore()
+  const { player } = useStore()
   const [cname, setCname] = useState<string>('')
   const navigate = useNavigate()
 
@@ -32,8 +30,8 @@ export const DetailPage = () => {
     const { points, rank, age, height, weight } = data
     return (
       <>
-        <Button sx={{  position: 'absolute', top: '2rem', right: '50%'}} onClick={goToHomePage} >
-        <CloseRoundedIcon sx={{ color: 'black', objectFit:'cover'}}/>
+        <Button sx={{ position: 'absolute', top: '2rem', right: '50%' }} onClick={goToHomePage} >
+          <CloseRoundedIcon sx={{ color: 'black', objectFit: 'cover' }} />
         </Button>
         <Box sx={{ display: 'block', margin: 'auto' }}>
           <Card sx={{ minWidth: '75rem', maxHeight: '43rem', display: 'flex', margin: '5rem 3rem 0 3rem' }}>
@@ -189,7 +187,7 @@ export const DetailPage = () => {
                     objectPosition: '50% 50%',
                     paddingTop: 5,
                   }}
-                  onError = {handleImageError}
+                  onError={handleImageError}
                 />
               </Grid>
               <Grid item>

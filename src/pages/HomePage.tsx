@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import { useStore } from "../lib/store"
 import { Player } from "../lib/models";
 import { TennisCard } from "../components/tennis-card";
 import { SearchBar } from "../components/search-bar";
-import { Container, Grid } from '@mui/material';
+import { Grid } from '@mui/material';
 
 export const HomePage = () => {
   const {

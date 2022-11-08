@@ -4,8 +4,7 @@ import { Player } from "../lib/models";
 // import { styled } from '@mui/system';
 
 export const SearchBar = () => {
-  const { players,
-    setFilteredPlayers } = useStore()
+  const { players, setFilteredPlayers } = useStore()
 
   const filterPlayer = (uInput: string, players: Player[]) => {
     if (!uInput) {
@@ -34,7 +33,7 @@ export const SearchBar = () => {
     <>
       <TextField label="Rechercher un joueur" variant="outlined"
         onChange={inputHandler} fullWidth
-        sx={{ borderRadius: '15px', backgroundColor: 'transparent'}}
+        sx={{ borderRadius: '15px', backgroundColor: 'transparent' }}
         InputLabelProps={{
           style: { color: 'grey', fontFamily: 'Mulish Bold' }
         }} />
