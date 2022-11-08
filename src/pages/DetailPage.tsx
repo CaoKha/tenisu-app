@@ -18,7 +18,7 @@ export const DetailPage = () => {
   const handleImageError = (e: any) => {
     e.target.onerror = null;
     // e.target.style.display = 'none'
-    e.target.src = "src/assets/images/usa.jpg"
+    e.target.src = "https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_United_States_%281912%E2%80%931959%29.jpg"
   }
 
   const goToHomePage = () => {
