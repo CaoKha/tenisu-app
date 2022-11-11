@@ -25,7 +25,7 @@ export const TennisCard = (player: Player) => {
 
   return (
     <>
-      <Card sx={{ display: 'flex', minWidth: '35rem', marginBottom: '1.5rem' }} onClick={goToDetail} >
+      <Card className={firstname} sx={{ display: 'flex', minWidth: '35rem', marginBottom: '1.5rem' }} onClick={goToDetail} >
         <Grid container>
           <Grid item>
             <CardMedia
