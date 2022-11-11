@@ -1,23 +1,28 @@
-import TextField from '@mui/material/TextField';
-import { useStore } from "../lib/store";
-import { Player } from "../lib/models";
+import TextField from '@mui/material/TextField'
+import { useStore } from '../lib/store'
+import { Player } from '../lib/models'
 // import { styled } from '@mui/system';
 
 export const SearchBar = () => {
   const { players, setFilteredPlayers } = useStore()
-
   const filterPlayer = (uInput: string, players: Player[]) => {
     if (!uInput) {
       return players
     } else {
-      return players.filter((player: Player) =>
-        player.firstname.toLowerCase().includes(uInput) ||
-        player.lastname.toLowerCase().includes(uInput))
+      return players.filter((player: Player) => {
+        const fullname = player.firstname + ' ' + player.lastname
+        return (
+          fullname.toLowerCase().includes(uInput.toLowerCase())
+        )
+      })
     }
   }
 
   const inputHandler = (event: any) => {
-    let filteredPlayers = filterPlayer(event.target.value.toLowerCase(), players)
+    let filteredPlayers = filterPlayer(
+      event.target.value.toLowerCase(),
+      players
+    )
     setFilteredPlayers(filteredPlayers)
   }
 
@@ -28,20 +33,18 @@ export const SearchBar = () => {
   //   },
   // }));
 
-
   return (
     <>
-      <TextField label="Rechercher un joueur" variant="outlined"
-        onChange={inputHandler} fullWidth
+      <TextField
+        label='Rechercher un joueur'
+        variant='outlined'
+        onChange={inputHandler}
+        fullWidth
         sx={{ borderRadius: '15px', backgroundColor: 'transparent' }}
         InputLabelProps={{
-          style: { color: 'grey', fontFamily: 'Mulish Bold' }
-        }} />
+          style: { color: 'grey', fontFamily: 'Mulish Bold' },
+        }}
+      />
     </>
   )
-
-
-
-
 }
-
