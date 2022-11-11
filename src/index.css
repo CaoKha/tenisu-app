@@ -6,10 +6,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
   background-image: url("https://img.freepik.com/premium-photo/yellow-mono-color-tennis-ball-yellow-solid-background-minimalistic-design-object-3d-rendering-icon-ui-ux-interface-element_187882-2819.jpg") ;
   background-size: cover;
-  background-position: center;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -33,7 +31,7 @@ body {
   margin: 0;
   /* place-items: center; */
   font-family: 'Mulish SemiBold';
-  min-width: 320px;
+  min-width: 100vw;
   min-height: 100vh;
 }
 

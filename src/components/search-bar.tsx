@@ -11,9 +11,7 @@ export const SearchBar = () => {
     } else {
       return players.filter((player: Player) => {
         const fullname = player.firstname + ' ' + player.lastname
-        return (
-          fullname.toLowerCase().includes(uInput.toLowerCase())
-        )
+        return fullname.toLowerCase().includes(uInput.toLowerCase())
       })
     }
   }
