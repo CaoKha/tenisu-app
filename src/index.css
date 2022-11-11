@@ -7,16 +7,16 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-  background-image: url(./assets/images/tennisball.jpg);
-  background-position: left 10% bottom 45%;
-
+  background-image: url("https://img.freepik.com/premium-photo/yellow-mono-color-tennis-ball-yellow-solid-background-minimalistic-design-object-3d-rendering-icon-ui-ux-interface-element_187882-2819.jpg") ;
+  background-size: cover;
+  background-position: center;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  --orange: #F2753B;
-  --orange-light: #EBAD65;
+  --orange: #f2753b;
+  --orange-light: #ebad65;
   --black: #000000;
 }
 
@@ -30,7 +30,7 @@ a:hover {
 }
 
 body {
-  margin: 0; 
+  margin: 0;
   /* place-items: center; */
   font-family: 'Mulish SemiBold';
   min-width: 320px;
@@ -75,25 +75,25 @@ button:focus-visible {
 }
 
 @font-face {
-  font-family: "Mulish Regular";
-  src: local("Mulish Regular"),
-    url(./assets/fonts/Mulish/Mulish-Regular.ttf) format("truetype");
+  font-family: 'Mulish Regular';
+  src: local('Mulish Regular'),
+    url(./assets/fonts/Mulish/Mulish-Regular.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: "Mulish Bold";
-  src: local("Mulish Bold"),
-    url(./assets/fonts/Mulish/Mulish-Bold.ttf) format("truetype");
+  font-family: 'Mulish Bold';
+  src: local('Mulish Bold'),
+    url(./assets/fonts/Mulish/Mulish-Bold.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: "Mulish SemiBold";
-  src: local("Mulish SemiBold"),
-    url(./assets/fonts/Mulish/Mulish-SemiBold.ttf) format("truetype");
+  font-family: 'Mulish SemiBold';
+  src: local('Mulish SemiBold'),
+    url(./assets/fonts/Mulish/Mulish-SemiBold.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: "Montserrat Bold";
-  src: local("Montserrat Bold"),
-    url(./assets/fonts/Montserrat/Montserrat-Bold.ttf) format("truetype");
+  font-family: 'Montserrat Bold';
+  src: local('Montserrat Bold'),
+    url(./assets/fonts/Montserrat/Montserrat-Bold.ttf) format('truetype');
 }
