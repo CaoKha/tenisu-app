@@ -44,7 +44,8 @@ export const DetailPage = () => {
           display: 'flex',
           alignItems: 'center',
           flexDirection: 'column',
-          minWidth: '75rem',
+          minWidth: '70rem',
+
         }}
       >
         <Button
@@ -56,10 +57,10 @@ export const DetailPage = () => {
         <Box sx={{ display: 'block', margin: 'auto' }}>
           <Card
             sx={{
-              minWidth: '75rem',
-              minHeight: '35rem',
+              minWidth: '70rem',
+              maxHeight: '42rem',
               display: 'flex',
-              margin: '1rem 30px 0 30px',
+              margin: '1rem 5rem 0 5rem',
             }}
           >
             <CardMedia
