@@ -1,9 +1,9 @@
-export interface Country {
+export type Country = {
   picture: string;
   code: string;
 }
 
-export interface Data {
+export type Data = {
   rank: number;
   points: number;
   weight: number;
@@ -12,7 +12,7 @@ export interface Data {
   last: number[];
 }
 
-export interface Player {
+export type Player = {
   id: number;
   firstname: string;
   lastname: string;
