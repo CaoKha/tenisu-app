@@ -9,14 +9,14 @@ function App() {
   return (
     <div className="App">
       <StoreProvider>
-        {/* <HashRouter> */}
-        <BrowserRouter>
+        <HashRouter>
+        {/* <BrowserRouter> */}
           <Routes>
             <Route path="/" element={<HomePage/>}/>
             <Route path="/:player_id" element={<DetailPage/>}/>
           </Routes>
-        {/* </HashRouter> */}
-        </BrowserRouter>
+        </HashRouter>
+        {/* </BrowserRouter> */}
       </StoreProvider>
     </div>
   )

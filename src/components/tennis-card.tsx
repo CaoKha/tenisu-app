@@ -14,6 +14,7 @@ export const TennisCard = (player: Player) => {
     setPlayer(player)
     navigate('/' + id)
   }
+  console.log(player)
 
   useEffect(() => {
     fetch('https://restcountries.com/v3.1/alpha/' + country.code)

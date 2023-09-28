@@ -7,12 +7,19 @@ export const DetailPage = () => {
   const { player } = useStore();
   const [cname, setCname] = useState<string>("");
   const navigate = useNavigate();
+  console.log(player);
+
+  type Tcdata = {
+    name: {
+      common: string;
+    };
+  };
 
   useEffect(() => {
     if (player)
       fetch("https://restcountries.com/v3.1/alpha/" + player.country.code)
         .then((response) => response.json())
-        .then((cdatas) => cdatas.map((cdata: any) => setCname(cdata.name.common)));
+        .then((cdatas) => cdatas.map((cdata: Tcdata) => setCname(cdata.name.common)));
   }, []);
 
   const handleImageError = (e: any) => {
